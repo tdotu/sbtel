@@ -31,28 +31,28 @@ sbtel.send("A","hi") -- sending package
 
 ## API
 
-###sbtel.LoadMap(src)
+### sbtel.LoadMap(src)
 Loads a json formatted connection map file
 
-###sbtel.ls()
+### sbtel.ls()
 Shows all available sbtel connections (information will be printed but not returned)
 
-###sbtel.setID(id)
+### sbtel.setID(id)
 Sets the sender ID for outgoing traffic
 
-###sbtel.addCon(id,ip,key,iv)
+### sbtel.addCon(id,ip,key,iv)
 Adds a new connection to the list of available connections (not saved to the json file)
 
-###sbtel.remCon(id)
+### sbtel.remCon(id)
 Removes a connection from the connection list
 
-###sbtel.sendPackage(id,data)
+### sbtel.sendPackage(id,data)
 Sends a package to the id node
 
-###sbtel.bind(port)
+### sbtel.bind(port)
 Starts a sbtel sever listening on the given port
 
-###sbtelServer:registerReciever(f)
+### sbtelServer:registerReciever(f)
 Registers a function f as callback for message reception
 prototype for such a function
 ```lua
